@@ -1,30 +1,21 @@
-<h1>Добро пожаловать в барбершоп</h1>
+<h3> <<<Добро пожаловать в барбершоп>>> </h3>
 
 <form action="/visite" method="POST">
-  </br>
-  <div class="form-group"> 
+    <div class="form-group"> 
     <label>ИМЯ</label>
-    <input type="text" name="@user_name" class="form-control" placeholder="Введите номер телефона">
-  </div>  
-      </br>
-
+    <input type="text" name="@user_name" class="form-control" placeholder="Введите ваше имя">
+  </div>    
   <div class="form-group"> 
     <label>ТЕЛЕФОН</label>
     <input type="text" name="@phone" class="form-control" placeholder="Введите номер телефона">
   </div>
-   </br>
-
-  <div class="form-group"> 
+     <div class="form-group"> 
     <label>Когда Вас ждать?</label>
-<<<<<<< HEAD
-    <input name="@time" type="text" class="form-control" placeholder="Желаемый день и время">
-=======
+<!-- <<<<<<< HEAD-->
     <input type="text" name="@time" class="form-control" placeholder="Желаемый день и время">
->>>>>>> parent of 3befff5... подключила jquery
-  </div>  
-   </br>
-
-  <div class="form-group"> 
+<!-- >>>>>>> parent of 3befff5... подключила jquery-->
+  </div> 
+    <div class="form-group"> 
     <label>Выберете мастера</label>
         <select name="@barber" class="form-control">
             <option>Чебурашка</option>
@@ -32,22 +23,37 @@
             <option>Крыска Лариска</option>
             <option>Шапокляк</option>
         </select>
-  </div>  
-   </br>   
-  <!--button Submit кнопка получилась синяя-->
+  </div> 
+   <div class="form-group"> 
+    <label>Выберете цвет окрашивания</label>       
+       <select id="color" name="@color">
+            <option value="#7bd148">Green</option>
+            <option value="#5484ed">Bold blue</option>
+            <option value="#a4bdfc">Blue</option>
+            <option value="#46d6db">Turquoise</option>
+            <option value="#7ae7bf">Light green</option>
+            <option value="#51b749">Bold green</option>
+            <option value="#fbd75b">Yellow</option>
+            <option value="#ffb878">Orange</option>
+            <option value="#ff887c">Red</option>
+            <option value="#dc2127">Bold red</option>
+            <option value="#dbadff">Purple</option>
+            <option value="#e1e1e1">Gray</option>
+        </select>
+    </div>
+    <!--button Submit кнопка получилась синяя-->
   <button type="submit" class="btn btn-primary">Записаться</button><br/>
-  <!-- кнопка белого цвета <input type="submit">-->
+  <!-- кнопка белого цвета самая примитивная  <input type="submit">-->
 
 </form>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 <!--подключение javascript именно на этой странице/ у меня не работает этот код-->
 <script type="text/javascript">
- 
+  $('#color').simplecolorpicker();
 </script>
 
-
-=======
->>>>>>> parent of 3befff5... подключила jquery
+<!-- =======
+>>>>>>> parent of 3befff5... подключила jquery -->
 
 
                      

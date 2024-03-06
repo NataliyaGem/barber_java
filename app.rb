@@ -61,13 +61,14 @@ post '/visite' do
   @phone = params[:@phone]
   @time = params[:@time]
   @barber = params[:@barber]
+  @color = params[:@color]
 
   @title = "Спасибо!"
-  @message = "#{@user_name}, мы будем ждать вас #{@time} к барберу #{@barber}"
+  @message = "#{@user_name}, мы будем ждать вас #{@time} к барберу #{@barber}, цвет #{@color}"
 
   f = File.open 'client.txt', 'a' # образует запись в файл, а - добавляет в конец файла
       f.write "
-      Клиент: #{@user_name} === телефон: #{@phone} === дата/время: #{@time} === барбер: #{@barber}"
+Клиент: #{@user_name} === телефон: #{@phone} === дата/время: #{@time} === барбер: #{@barber} === цвет #{@color}"
       f.close
   erb :message
 end
